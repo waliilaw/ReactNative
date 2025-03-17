@@ -15,12 +15,7 @@ export default function TabTwoScreen() {
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
       headerImage={
-        <IconSymbol
-          size={310}
-          color="#808080"
-          name="chevron.left.forwardslash.chevron.right"
-          style={styles.headerImage}
-        />
+        <Image source={require('@/assets/images/bg.jpg')} style={{ alignSelf: 'center', objectFit :'cover'}} />
         
       }>
         <Button title="Go to Explore" onPress={() => navigation.navigate('index')} />
